@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -58,7 +59,9 @@ const Footer = () => {
       </div>
       <div className="text-bg-dark">
         <div className="container py-2 d-flex align-items-center justify-content-between">
-          <span>© 2022 Tribute , Inc.</span>
+          <span>
+            © 2022 Tribute , Inc. (<Link to={"/burger"}>Burger Page</Link>)
+          </span>
           <img src="./images/payments.png" alt="" />
           <a href="#" className="btn link-light">
             Scroll to top <i className="fa-solid fa-arrow-up"></i>
