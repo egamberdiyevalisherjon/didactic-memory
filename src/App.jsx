@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
+import Burger from "./pages/Burger";
 
 let products = [
   {
@@ -222,6 +223,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home products={products} />} />
         <Route path="/search" element={<Search products={products} />} />
+        <Route path="/burger" element={<Burger />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </Router>
